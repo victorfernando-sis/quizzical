@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+button{
+  background-color: #4D5B9E;
+  border-radius: 10px;
+  padding: .8em 2em;
+  font-family: inherit;
+  font-size: .9rem;
+  color: #fff;
+  border: none;
+  margin: 0 1em;
+  cursor: pointer;
+}
+
+.intro-screen{
+  width: 80%;
+  margin: 0 auto;
+  color: #293264;
+  letter-spacing: 1px;
+  word-spacing: 1px;   
+}
+
+.game-title{
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.quiz-screen{
+  margin-top: 2em;
+  max-width: 800px;
+}
+
+.question-title{
+  color: #293264;
+  text-align: left;
+}
+.choices-container{
+  display: flex;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #DBDEF0;
+}
+
+.choice-el{
+  border: 1px solid #4D5B9E; 
+  border-radius: 8px;
+  padding: .2em .9em;
+  margin-right: 1em;
+  cursor: pointer;
+}
+.bkg-chosen-answer{
+  background: #D6DBF5;
+  border: 1px solid #D6DBF5 ;
+}
+.bkg-green{
+  background: #94D7A2;
+  border: 1px solid #94D7A2 ;
+  color: rgba(41, 50, 100, 1);
+}
+.bkg-red{
+  background: #F8BCBC;
+  border: 1px solid #F8BCBC ;
+}
+.disabled{
   pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.result-container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
 }
